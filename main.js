@@ -1,10 +1,7 @@
-libraryStorage = {
-	librarySystem: function librarySystem(libraryName, callback) {
-		// creates the library
-		if (arguments.length > 1) {
-			libraryStorage[libraryName] = callback();
-		} else {
-			return libraryStorage[libraryName];
-		}
+'use strict';
+var libraryStorage = {
+	librarySystem: function (libraryName, callback) {
+		libraryStorage[libraryName] = callback();
 	}
 };
+window.libraryStorage = libraryStorage;

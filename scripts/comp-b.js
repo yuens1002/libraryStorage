@@ -1,3 +1,5 @@
+'use strict';
+libraryStorage.librarySystem('b', function() {
 var b = {
 	friends: {
 		Sarah: {
@@ -12,9 +14,8 @@ var b = {
 		}
 	},
 	printIntro: function() {
-		libraryStorage.a.sayName.call(a);
+		libraryStorage.a.sayName();
 	}
 };
-libraryStorage.librarySystem('b', function() {
-	return b;
+return b;
 });
